@@ -4,8 +4,8 @@ def pathToText(filename):
     return data
 
 
-# filename = "in.txt"
-inFileName = "HE_LessEdited_Inclusion_Paragraph_14k_sample_801.txt"
+
+inFileName = "in.txt"
 text = pathToText(inFileName)
 sents = []
 for line in text:
@@ -21,5 +21,3 @@ outFileName = inFileName.split(".")[0]+"_SentSep.txt"
 file = open(outFileName, "w", encoding = "utf-8")
 file.write(newText)
 file.close()
-
-
